@@ -1,0 +1,79 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+
+/* theme: Unity - dove */
+
+
+//
+// Typography
+//
+
+@global-link-color: #778e97;
+@global-link-hover-color: #c2ced2;
+
+//
+// Buttons, Navs & Badges
+//
+
+@global-primary-background: #778e97;
+@global-secondary-background: #c2ced2;
+@global-success-background: #a4c181;
+@global-warning-background: #dfb477;
+@global-danger-background: #d05468;
+
+//
+// Navbar
+//
+
+@navbar-background: rgba(255,255,255,0.2);
+@navbar-gradient-top: rgba(255,255,255,0.05);
+@navbar-gradient-bottom: rgba(255,255,255,0.1);
+@navbar-border-bottom: rgba(0, 0, 0, 0.1);
+@navbar-border-top: none;
+@navbar-nav-color: #fff;
+@navbar-nav-font-weight: 400;
+@navbar-nav-active-background: @global-primary-background;
+@navbar-nav-dark-border: rgba(0,0,0,0.05);
+@navbar-nav-dark-hover-border: transparent;
+@navbar-nav-light-border: rgba(255,255,255,0.3);
+@navbar-toggle-color: @global-contrast-color;
+
+//
+// Offcanvas
+//
+
+@offcanvas-panel-link-hover-color: @global-primary-background;
+
+//
+// Panel
+//
+
+@panel-box-primary-link-color: @global-secondary-background;
+@panel-box-secondary-link-color: @global-primary-background;
+@panel-box-secondary-link-hover-color: lighten(@global-primary-background, 60%);
+@panel-box-secondary-shadow: darken(@global-secondary-background, 5%);
+
+//
+// Icon
+//
+
+@icon-button-background: @navbar-gradient-bottom;
+@icon-button-color: @global-contrast-color;
+
+//
+// Base
+//
+
+@base-body-font-family: 'Lato';
+@base-heading-font-family: 'Lato';
+
+//
+// Theme
+//
+
+@theme_header-background-image:'dove';
+@theme_overlay-shadow: darken(@global-secondary-background, 5%);
+@theme_sticky-nav-navbar-nav-background: fade(@global-primary-background, 60);
+@theme_toolbar-subnav-color: @global-contrast-color;
+@theme_toolbar-subnav-hover-color: @global-color;

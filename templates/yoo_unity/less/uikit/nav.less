@@ -1,0 +1,230 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Nav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@nav-padding-horizontal:                        0;
+
+@nav-header-padding-vertical:                   @nav-padding-vertical;
+@nav-header-padding-horizontal:                 @nav-padding-horizontal;
+@nav-header-font-size:                          round((@global-font-size * 0.85)); // 12px
+@nav-header-margin-top:                         @global-margin;
+
+@nav-divider-margin-horizontal:                 @nav-padding-horizontal;
+
+@nav-subtitle-font-size:                        round((@global-font-size * 0.85)); // 12px
+@nav-subtitle-line-height:                      round((@nav-subtitle-font-size * 1.5)); // 18px
+
+@nav-nested-padding-left:                       10px;
+
+@nav-sub-padding-left:                          @nav-padding-horizontal;
+
+@nav-parent-icon-width:                         @global-line-height;
+
+@nav-side-color:                                @global-link-color;
+@nav-side-hover-background:                     rgba(0,0,0,0);
+@nav-side-hover-color:                          @global-link-hover-color;
+@nav-side-active-background:                    rgba(0,0,0,0);
+@nav-side-active-color:                         @global-link-hover-color;
+@nav-side-header-color:                         @global-color;
+@nav-side-divider-border:                       @global-border;
+@nav-side-nested-color:                         @global-link-color;
+@nav-side-nested-hover-color:                   @global-link-hover-color;
+
+@nav-dropdown-color:                            @global-link-color;
+@nav-dropdown-hover-background:                 rgba(0,0,0,0);
+@nav-dropdown-hover-color:                      @global-link-hover-color;
+@nav-dropdown-header-color:                     @global-muted-color;
+@nav-dropdown-divider-border:                   @global-border;
+@nav-dropdown-nested-color:                     @global-link-color;
+@nav-dropdown-nested-hover-color:               @global-link-hover-color;
+
+@nav-navbar-color:                              @global-link-color;
+@nav-navbar-hover-background:                   rgba(0,0,0,0);
+@nav-navbar-hover-color:                        @global-link-hover-color;
+@nav-navbar-header-color:                       @global-muted-color;
+@nav-navbar-divider-border:                     @global-border;
+@nav-navbar-nested-color:                       @global-link-color;
+@nav-navbar-nested-hover-color:                 @global-link-hover-color;
+
+@nav-offcanvas-color:                           @global-contrast-color;
+@nav-offcanvas-hover-background:                lighten(@offcanvas-bar-background, 3%);
+@nav-offcanvas-hover-color:                     @offcanvas-panel-link-hover-color;
+@nav-offcanvas-active-background:               @global-primary-background;
+@nav-offcanvas-active-color:                    @global-contrast-color;
+@nav-offcanvas-header-color:                    @offcanvas-panel-color;
+@nav-offcanvas-divider-border:                  lighten(@offcanvas-bar-background, 50%);
+@nav-offcanvas-nested-color:                    @nav-offcanvas-color;
+@nav-offcanvas-nested-hover-color:              @nav-offcanvas-hover-color;
+
+
+// Sub-object: `uk-nav-header`
+// ========================================================================
+
+.hook-nav-header() { }
+
+
+// Sub-object: `uk-nav-divider`
+// ========================================================================
+
+.hook-nav-divider() { }
+
+
+// Sub-object: `uk-nav-sub`
+// ========================================================================
+
+.hook-nav-sub() { }
+
+
+// Modifier: `uk-nav-parent-icon`
+// ========================================================================
+
+.hook-nav-parent-icon() {
+    position: absolute;
+    right: 0;
+    width: 22px;
+    margin-right: 15px;
+    float: none;
+    text-align: right;
+}
+
+
+// Modifier `uk-nav-side`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-side() {
+    box-shadow: 0 1px 0 0 desaturate(fade(@global-primary-background, 10%), 50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+// Hover
+.hook-nav-side-hover() { box-shadow: 0 3px 0 0 desaturate(fade(@global-primary-background, 10%), 50%); }
+
+// Active
+.hook-nav-side-active() {
+}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-side-header() { }
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-side-divider() { }
+
+
+// Modifier `uk-nav-dropdown`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-dropdown() {
+    box-shadow: 0 1px 0 0 desaturate(fade(@global-primary-background, 10%), 50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+// Hover
+.hook-nav-dropdown-hover() { box-shadow: 0 3px 0 0 desaturate(fade(@global-primary-background, 10%), 50%); }
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-dropdown-header() { }
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-dropdown-divider() { }
+
+
+// Modifier `uk-nav-navbar`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-navbar() {
+    box-shadow: 0 1px 0 0 desaturate(fade(@global-primary-background, 10%), 50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+// Hover
+.hook-nav-navbar-hover() { box-shadow: 0 3px 0 0 desaturate(fade(@global-primary-background, 10%), 50%); }
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-navbar-header() { }
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-navbar-divider() { }
+
+
+// Modifier `uk-nav-offcanvas`
+// ========================================================================
+
+.hook-nav-offcanvas-link() { }
+.hook-nav-offcanvas-link-hover() { }
+
+//
+// Items
+//
+
+.hook-nav-offcanvas() {    border-top: 1px solid lighten(@offcanvas-bar-background, 5%); }
+
+// Hover
+.hook-nav-offcanvas-hover() { }
+
+// Active
+.hook-nav-offcanvas-active() { }
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-offcanvas-header() { }
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-offcanvas-divider() { }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-nav-misc() {
+    .uk-panel-box .uk-nav > li > a { padding: 5px @panel-box-padding; }
+    .uk-panel-box .uk-nav-sub > li { padding-left:@panel-box-padding; }
+    .uk-panel-box .uk-nav-suv > ul > li { padding-left: @nav-padding-horizontal / 2; }
+    .uk-panel-box .uk-nav .uk-nav-header { padding: 5px @panel-box-padding; }
+    .uk-nav-offcanvas ul a,
+    .uk-nav-offcanvas .uk-nav-header { padding-left: @nav-offcanvas-padding-horizontal; }
+}

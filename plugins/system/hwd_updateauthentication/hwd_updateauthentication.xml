@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" version="3.0" method="upgrade">
+	<name>plg_system_hwd_updateauthentication</name>
+	<author>HWD</author>
+	<creationDate>2015-09-09</creationDate>
+	<copyright>(C) 2014 Highwood Design Limited</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@hwdmediashare.co.uk</authorEmail>
+	<authorUrl>http://hwdmediashare.co.uk</authorUrl>
+	<version>2.0.3</version> 
+	<description>PLG_SYSTEM_HWD_UPDATEAUTHENTICATION_XML_DESCRIPTION</description>
+	<scriptfile>installer.php</scriptfile>  
+        <files>
+		<filename plugin="hwd_updateauthentication">hwd_updateauthentication.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_hwd_updateauthentication.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_hwd_updateauthentication.sys.ini</language>
+	</languages>
+        <updateservers>
+                <server type="collection" name="HWD Updates">https://bitbucket.org/hwdmediashare/updateserver/raw/master/update.xml</server>
+	</updateservers>            
+	<config>
+		<fields name="params">
+			<fieldset 
+                                name="basic"
+                        >
+				<field
+					name="username"
+					type="text"
+					default=""
+					label="PLG_SYSTEM_HWD_UPDATEAUTHENTICATION_FIELD_USERNAME_LABEL"
+					description="PLG_SYSTEM_HWD_UPDATEAUTHENTICATION_FIELD_USERNAME_DESC"
+                                />
+				<field
+					name="password"
+					type="password"
+					default=""
+					label="PLG_SYSTEM_HWD_UPDATEAUTHENTICATION_FIELD_PASSWORD_LABEL"
+					description="PLG_SYSTEM_HWD_UPDATEAUTHENTICATION_FIELD_PASSWORD_DESC"
+                                />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

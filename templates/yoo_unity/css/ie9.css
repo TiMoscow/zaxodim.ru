@@ -1,0 +1,15 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+   Defines styles for Internet Explorer 9
+ ========================================================================== */
+
+[data-uk-scrollspy*='uk-animation-'] { opacity: 1; }
+
+.wk-slideshow-unity .slides>li {
+    top: 0 !important;
+}
+
+.wk-slideshow-unity .wk-slideset {
+    margin-top: -120px;
+}

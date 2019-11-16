@@ -1,0 +1,145 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Panel
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@panel-title-margin-bottom:                     @global-margin;
+@panel-title-font-size:                         26px;
+@panel-title-line-height:                       round((@panel-title-font-size * 1.23)); // 32px
+@panel-title-font-weight:                       300;
+@panel-title-color:                             @global-color;
+
+@panel-box-padding:                             @global-margin-large;
+@panel-box-background:                          @global-light-background;
+@panel-box-color:                               @global-color;
+@panel-box-title-color:                         @global-color;
+@panel-box-badge-right:                         @panel-box-badge-top;
+
+@panel-box-primary-background:                  @global-primary-background;
+@panel-box-primary-color:                       @global-contrast-color;
+@panel-box-primary-title-color:                 @global-contrast-color;
+
+@panel-box-secondary-background:                @global-secondary-background;
+@panel-box-secondary-color:                     @global-contrast-color;
+@panel-box-secondary-title-color:               @global-contrast-color;
+
+@panel-header-title-border:                     @global-border;
+@panel-header-title-color:                      @global-color;
+
+@panel-divider-gutter:                          @global-grid-gutter;
+@panel-divider-gutter-large:                    @global-grid-gutter-large;
+@panel-divider-border:                          @global-border;
+
+@panel-badge-border-radius:                     @badge-border-radius;
+
+//
+// New
+//
+
+@panel-box-primary-link-color:                  @global-link-color;
+@panel-box-secondary-link-color:                @global-link-color;
+
+@panel-box-primary-link-hover-color:            lighten(@global-link-hover-color, 30%);
+@panel-box-secondary-link-hover-color:          @global-link-hover-color;
+
+@panel-box-primary-headline-color:              @global-contrast-color;
+@panel-box-secondary-headline-color:             @global-contrast-color;
+
+@panel-box-shadow:                              @global-shadow;
+@panel-box-primary-shadow:                      darken(@panel-box-primary-background, 10%);
+@panel-box-secondary-shadow:                    darken(@panel-box-secondary-background, 30%);
+
+
+// Sub-object: `uk-panel-title`
+// ========================================================================
+
+.hook-panel-title() {}
+
+
+// Sub-object: `uk-panel-badge`
+// ========================================================================
+
+.hook-panel-badge() {
+    border-radius: 0 !important;
+    border-bottom-left-radius: @panel-badge-border-radius !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+
+// Modifier: `uk-panel-box`
+// ========================================================================
+
+.hook-panel-box() { box-shadow: 0 1px 0 0 @panel-box-shadow; }
+
+//
+// Sub-modifier: `uk-panel-box-primary`
+//
+
+.hook-panel-box-primary() {
+
+    box-shadow: 0 1px 0 0 @panel-box-primary-shadow;
+
+    a { color: @panel-box-primary-link-color; }
+
+    a:hover { color: @panel-box-primary-link-hover-color; }
+
+    h1, h2, h3, h4, h4, h5, h6 { color: @panel-box-primary-headline-color; }
+
+    .uk-button {
+        color: @global-contrast-color;
+        box-shadow: inset 0 0 0 1px @global-contrast-color;
+
+        &:hover {
+            background-image: linear-gradient( 0deg, @global-contrast-color, @global-contrast-color );;
+            color: @global-primary-background;
+            box-shadow: inset 0 0 0 1px @global-contrast-color;
+        }
+    }
+
+}
+
+//
+// Sub-modifier: `uk-panel-box-secondary`
+//
+
+.hook-panel-box-secondary() {
+
+    box-shadow: 0 1px 0 0 @panel-box-secondary-shadow;
+
+    a { color: @panel-box-secondary-link-color; }
+
+    a:hover { color: @panel-box-secondary-link-hover-color; }
+
+    h1, h2, h3, h4, h4, h5, h6 { color: @panel-box-secondary-headline-color; }
+
+    .uk-button {
+        color: @global-contrast-color;
+        box-shadow: inset 0 0 0 1px @global-contrast-color;
+
+        &:hover {
+            background-image: linear-gradient( 0deg, @global-contrast-color, @global-contrast-color );;
+            color: @global-secondary-background;
+            box-shadow: inset 0 0 0 1px @global-contrast-color;
+        }
+    }
+
+}
+
+
+// Modifier: `uk-panel-header`
+// ========================================================================
+
+.hook-panel-header() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-panel-misc() {}

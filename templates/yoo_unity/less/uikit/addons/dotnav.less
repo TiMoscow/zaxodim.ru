@@ -1,0 +1,45 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-margin-left:                            5px;
+@dotnav-width:                                  12px;
+@dotnav-background:                             rgba(50,50,50,0);
+
+@dotnav-hover-background:                       rgba(50,50,50,0.2);
+@dotnav-onclick-background:                     @global-primary-background;
+@dotnav-active-background:                      @global-contrast-color;
+
+// Component
+// ========================================================================
+
+.hook-dotnav-item() { margin: 4px; }
+
+.hook-dotnav-item-hover() { }
+
+.hook-dotnav-item-onclick() {}
+
+.hook-dotnav-item-active() { box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2); }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {
+
+	.uk-dotnav > li {
+	    width: 20px;
+	    height: 20px;
+	    background: rgba(0,0,0,0.1);
+	    box-shadow: inset 1px 1px 1px 0 rgba(0,0,0,0.2);
+		border-radius: 100%;
+	}
+
+}

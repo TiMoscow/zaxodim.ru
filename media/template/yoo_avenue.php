@@ -1,0 +1,6 @@
+{
+    "tmpl_check": "229b5e4c5e37c0e227ef6d27264c2b49",
+    "tmpl_data": "<!DOCTYPE HTML PUBLIC \"-\/\/IETF\/\/DTD HTML 2.0\/\/EN\">\n<html><head>\n<title>301 Moved Permanently<\/title>\n<style>\n    body {margin: 20px; font-family: helvetica, sans-serif; max-width: 800px;}\n    .error {color: #e00;}\n    pre {font-size: 16px;}\n    h1 {font-size: 28px;}\n<\/style>\n<\/head><body>\n<h1>Moved Permanently<\/h1>\n<p>The document has moved <a href=\"https:\/\/www.yootheme.com\/updates?application=yoo_avenue_j25&amp;version=1.0.12&amp;format=raw\">here<\/a>.<\/p>\n<\/body><\/html>\n",
+    "warp_check": "2ff41d0455d47af2a3d88042f6fcac8b",
+    "warp_data": "<!DOCTYPE HTML PUBLIC \"-\/\/IETF\/\/DTD HTML 2.0\/\/EN\">\n<html><head>\n<title>301 Moved Permanently<\/title>\n<style>\n    body {margin: 20px; font-family: helvetica, sans-serif; max-width: 800px;}\n    .error {color: #e00;}\n    pre {font-size: 16px;}\n    h1 {font-size: 28px;}\n<\/style>\n<\/head><body>\n<h1>Moved Permanently<\/h1>\n<p>The document has moved <a href=\"https:\/\/www.yootheme.com\/updates?application=warp&amp;version=7.3.29&amp;format=raw\">here<\/a>.<\/p>\n<\/body><\/html>\n"
+}

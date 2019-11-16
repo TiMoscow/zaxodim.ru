@@ -1,0 +1,60 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Dropdown
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dropdown-margin-top:                           5px;
+@dropdown-padding:                              15px;
+@dropdown-background:                           #fff;
+@dropdown-color:                                lighten(@global-color, 20%);
+@dropdown-z-index:                              (@global-z-index + 20);
+@dropdown-divider-border:                       @global-border;
+
+@dropdown-navbar-color:                         @global-muted-color;
+@dropdown-navbar-margin:                        0;
+@dropdown-navbar-background:                    @navbar-nav-hover-background;
+@dropdown-navbar-color:                         @global-color;
+
+//
+// New
+//
+
+@dropdown-border-radius:                         @global-border-radius;
+
+// Component
+// ========================================================================
+
+.hook-dropdown() {
+    padding: 0 @dropdown-padding;
+    padding: 15px 25px;
+    border-radius: @dropdown-border-radius;
+    box-shadow: 1px 1px 0 0 rgba(0,0,0,0.05);
+}
+
+
+// Modifier: `uk-dropdown-navbar`
+// ========================================================================
+
+.hook-dropdown-navbar() {
+    margin-top: 20px;
+    border-radius:  @dropdown-border-radius;
+    color: @dropdown-color;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dropdown-misc() {
+
+    .uk-dropdown .uk-nav { margin: 0; }
+
+    .uk-dropdown .uk-nav li:last-child:not(.uk-parent) a { box-shadow: none; }
+
+}

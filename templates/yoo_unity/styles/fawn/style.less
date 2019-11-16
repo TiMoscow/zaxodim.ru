@@ -1,0 +1,73 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+/* theme: Unity - fawn */
+
+
+//
+// Typography
+//
+
+@global-link-color: #e0996b;
+@global-link-hover-color: #8cb5b6;
+
+//
+// Buttons, Navs & Badges
+//
+
+@global-primary-background: #e0996b;
+@global-secondary-background: #8cb5b6;
+@global-success-background: #abc68b;
+@global-warning-background: #dba65a;
+@global-danger-background: #ca5b6c;
+
+//
+// Navbar
+//
+
+@navbar-background: rgba(255,255,255,0);
+@navbar-gradient-top: rgba(0, 0, 0, 0.1);
+@navbar-gradient-bottom: rgba(0, 0, 0, 0.1);
+@navbar-nav-active-background: @global-primary-background;
+@navbar-nav-color: @global-contrast-color;
+@navbar-border-top: none;
+@navbar-border-bottom: rgba(0, 0, 0, 0.1);
+@navbar-nav-dark-border: rgba(0,0,0,0.1);
+@navbar-nav-dark-hover-border: transparent;
+@navbar-nav-light-border: rgba(255,255,255,0.2);
+@navbar-toggle-color: @global-contrast-color;
+
+//
+// Panel
+//
+
+@panel-box-primary-link-color: darken(@global-primary-background, 30%);
+@panel-box-secondary-link-color: darken(@global-secondary-background, 30%);
+@panel-box-secondary-link-hover-color: lighten(@global-secondary-background, 30%);
+@panel-box-secondary-shadow: darken(@global-secondary-background, 10%);
+
+//
+// Icon
+//
+
+@icon-button-background: @navbar-gradient-bottom;
+@icon-button-color: @global-contrast-color;
+@icon-button-shadow: rgba(0,0,0,0.2);
+
+//
+// Base
+//
+
+@base-body-font-family: 'Roboto';
+@base-heading-font-family: 'Indie Flower';
+
+//
+// Theme
+//
+
+@theme_header-background-image: 'fawn';
+@theme_sticky-nav-navbar-nav-background: fade(@global-secondary-background, 80);
+@theme_toolbar-subnav-color: @global-contrast-color;
+@theme_toolbar-subnav-hover-color: @global-color;
