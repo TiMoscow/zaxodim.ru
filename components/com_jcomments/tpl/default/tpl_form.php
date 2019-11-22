@@ -190,7 +190,7 @@ function JCommentsInitializeForm()
 		}
 
 		$customBBCodes = $this->getVar('comments-form-custombbcodes');
-		if (count($customBBCodes)) {
+		if (!empty($customBBCodes) && isset ($customBBCodes)) {
 			foreach($customBBCodes as $code) {
 				if ($code->button_enabled) {
 					$k = 'custombbcode' . $code->id;
