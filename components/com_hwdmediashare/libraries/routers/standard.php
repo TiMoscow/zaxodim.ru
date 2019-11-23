@@ -994,7 +994,7 @@ class hwdMediaShareRouterStandard extends JComponentRouterBase
                 }
 
                 // Next we'll check for a category view.
-		if ($segments[0] != 'mediaitem' && $item->query['view'] == 'categories' || $item->query['view'] == 'category' || $segments[0] == 'category')
+		if (($segments[0] != 'mediaitem' && $item->query['view'] == 'categories') || $item->query['view'] == 'category' || $segments[0] == 'category')
                 {
                         if ($advanced)
                         {
