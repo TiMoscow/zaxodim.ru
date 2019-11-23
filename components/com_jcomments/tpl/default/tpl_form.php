@@ -38,6 +38,7 @@ class jtt_tpl_form extends JoomlaTuneTemplate
 	 */
 	function getCommentsFormFull()
 	{
+        require __DIR__ .'/../../libraries/kcaptcha/kcaptcha_config.php';
 		$object_id = $this->getVar('comment-object_id');
 		$object_group = $this->getVar('comment-object_group');
 
@@ -138,7 +139,7 @@ class jtt_tpl_form extends JoomlaTuneTemplate
 ?>
 <p>
 	<span>
-		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="<?php echo $link; ?>" width="121" height="60" alt="<?php echo JText::_('FORM_CAPTCHA'); ?>" /><br />
+		<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" src="<?php echo $link; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="<?php echo JText::_('FORM_CAPTCHA'); ?>" /><br />
 		<span class="captcha" onclick="jcomments.clear('captcha');"><?php echo JText::_('FORM_CAPTCHA_REFRESH'); ?></span><br />
 		<input class="captcha" id="comments-form-captcha" type="text" name="captcha_refid" value="" size="5" tabindex="6" /><br />
 	</span>
