@@ -159,7 +159,7 @@ class hwdMediaShareModelAddMedia extends JModelAdmin
                 $swfUrl = JURI::root(true) . '/media/com_hwdmediashare/assets/swf/Swiff.Uploader.swf';
                 $editTask = ($app->isAdmin() ? 'editmedia' : 'mediaform');
                 $verbose = ($config->get('debug') ? 'true' : 'false');
-                $limitSize = intval(hwdMediaShareUpload::getMaximumUploadSize('standard'));
+                $limitSize = (int)hwdMediaShareUpload::getMaximumUploadSize('standard');
                         
                 // Check if we need to limit to a single upload and redirect on success
                 if ($config->get('upload_workflow', 1) == 0)
