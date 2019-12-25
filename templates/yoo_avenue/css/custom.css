@@ -3,3 +3,16 @@
 /* ========================================================================
    Use this file to add custom CSS easily
  ========================================================================== */
+
+.tim-img-left{
+    margin: 10px;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+.tim-img-right{
+    margin: 10px;
+    float: right;
+    width: 200px;
+    height: auto;
+}
