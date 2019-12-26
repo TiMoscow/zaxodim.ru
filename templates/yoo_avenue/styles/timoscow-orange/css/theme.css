@@ -9992,6 +9992,7 @@ body {
  */
 .tm-headerbar .tm-logo {
   float: left;
+  position: relative;
 }
 .tm-logo-small {
   letter-spacing: -0.31em;
