@@ -111,7 +111,6 @@ $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/search.js');
 $this['asset']->addFile('js', 'warp:vendor/uikit/js/components/tooltip.js');
 $this['asset']->addFile('js', 'js:social.js');
 $this['asset']->addFile('js', 'js:theme.js');
-//$this['asset']->addFile('js', 'js:ng_sneg.js');
 
 // internet explorer
 if ($this['useragent']->browser() == 'msie') {
