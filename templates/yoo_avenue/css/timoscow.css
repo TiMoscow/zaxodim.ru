@@ -9,15 +9,39 @@
 .correct-png-animate{
     display: block;
     border-style: none;
-    width: 740px;
+    width: 340px;
     height: 110px;
 
+}
+.tom-animate{
+    /*display: none;*/
+    position: absolute;
+    left: 600px;
+    top: -20px;
+    display: none;
+}
+
+._8_marta{
+    display: inline-table;
+    position: absolute;
+    left: 380px;
+    top: -20px;
+    width: 495px;
+    height: 100px;
+}
+.tom-animate:hover{
+    /*left: 400px;*/
+    /*top: -20px;*/
+    /*-moz-transition: all 5s ease-out;*/
+    /*-o-transition: all 5s ease-out;*/
+    /*-webkit-transition: all 5s ease-out;*/
+    /*transform: scale(-1, 1);*/
 }
 .smilie {
     width: 140px;
     height: 134px;
     position: absolute;
-    left: 122px;
+    left: 110px;
     top: -19px;
 }
 .smilie::before, .smilie::after {
