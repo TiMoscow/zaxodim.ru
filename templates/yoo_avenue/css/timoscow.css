@@ -18,16 +18,16 @@
     position: absolute;
     left: 600px;
     top: -20px;
-    display: none;
 }
 
 ._8_marta{
-    display: inline-table;
+    /*display: inline-table;*/
     position: absolute;
     left: 380px;
     top: -20px;
     width: 495px;
     height: 100px;
+    display: none;
 }
 .tom-animate:hover{
     /*left: 400px;*/
