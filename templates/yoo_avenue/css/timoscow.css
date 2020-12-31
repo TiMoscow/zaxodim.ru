@@ -7,10 +7,20 @@
 
 /*-start---------------------logo animate --------------------*/
 .correct-png-animate{
-    display: block;
+    /*display: block;*/
     border-style: none;
     width: 340px;
     height: 110px;
+
+}
+.correct-png-animate--ng{
+    position: relative;
+    display: block;
+    border-style: none;
+    width: 347px;
+    height: 110px;
+    top: -30px;
+    z-index: 1;
 
 }
 .tom-animate{
@@ -43,6 +53,7 @@
     position: absolute;
     left: 110px;
     top: -19px;
+    z-index: 2;
 }
 .smilie::before, .smilie::after {
     content: '';
