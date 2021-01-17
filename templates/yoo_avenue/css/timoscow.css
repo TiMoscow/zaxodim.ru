@@ -15,7 +15,7 @@
 }
 .correct-png-animate--ng{
     position: relative;
-    display: block;
+    /*display: block;*/
     border-style: none;
     width: 347px;
     height: 110px;
@@ -51,8 +51,10 @@
     width: 140px;
     height: 134px;
     position: absolute;
-    left: 110px;
-    top: -19px;
+    /* left: 110px; */ /* correct-png-animate--ng */
+    left: 124px;
+    /* top: -19px; */ /* correct-png-animate--ng */
+    top: -11px;
     z-index: 2;
 }
 .smilie::before, .smilie::after {

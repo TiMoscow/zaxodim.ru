@@ -30,7 +30,7 @@ include($this['path']->path('layouts:theme.config.php'));
 <?php // <!--  Rotator --> ?>
 <!--<script type='text/javascript' id="s-5c660a5ba3788f9e">!function(t,e,n,o,a,c,s){t[a]=t[a]||function(){(t[a].q=t[a].q||[]).push(arguments)},t[a].l=1*new Date,c=e.createElement(n),s=e.getElementsByTagName(n)[0],c.async=1,c.src=o,s.parentNode.insertBefore(c,s)}(window,document,"script","//aurabom.ru/player/","vbm"); vbm('get', {"platformId":101348,"format":2,"align":"top","width":"640","height":"390","sig":"5c660a5ba3788f9e"});</script>-->
 <?php // <!-- Overrol  --> ?>
-<script type='text/javascript' id="s-0b5526a5a316e01c">!function(t,e,n,o,a,c,s){t[a]=t[a]||function(){(t[a].q=t[a].q||[]).push(arguments)},t[a].l=1*new Date,c=e.createElement(n),s=e.getElementsByTagName(n)[0],c.async=1,c.src=o,s.parentNode.insertBefore(c,s)}(window,document,"script","//aurabom.ru/player/","vbm"); vbm('get', {"platformId":101348,"format":3,"overrollType":"embeded","sig":"0b5526a5a316e01c"});</script>
+<!--<script type='text/javascript' id="s-0b5526a5a316e01c">!function(t,e,n,o,a,c,s){t[a]=t[a]||function(){(t[a].q=t[a].q||[]).push(arguments)},t[a].l=1*new Date,c=e.createElement(n),s=e.getElementsByTagName(n)[0],c.async=1,c.src=o,s.parentNode.insertBefore(c,s)}(window,document,"script","//aurabom.ru/player/","vbm"); vbm('get', {"platformId":101348,"format":3,"overrollType":"embeded","sig":"0b5526a5a316e01c"});</script>-->
 
 <?php // <!-- viboom end--> ?>
 

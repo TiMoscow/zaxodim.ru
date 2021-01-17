@@ -91,19 +91,19 @@ if ( $percent > 100 ) { $percent = 100; }
     <?php echo hwdMediaShareHelperModule::_loadpos('media-above-player'); ?>
     <!-- Item Media -->
     <div class="media-item-full" id="media-item-<?php echo $this->item->id; ?>">
-    
-    <!-- viboom --><div class="viboom-overroll"><!-- viboom -->
-    <!-- videoseed --><div id="7b43e8f4dc6de9801d24e9f8d6aa0fd8"><!-- videoseed -->
-    <!-- beseed --> <div id="beseed_overroll"><!-- beseed -->    
-    
+    <?php
+//    <!-- viboom --><div class="viboom-overroll"><!-- viboom -->
+//    <!-- videoseed --><div id="7b43e8f4dc6de9801d24e9f8d6aa0fd8"><!-- videoseed -->
+//    <!-- beseed --> <div id="beseed_overroll"><!-- beseed -->
+    ?>
       <?php echo hwdMediaShareMedia::get($this->item); ?>
       <!-- Navigation -->
       <?php echo $this->loadTemplate('navigation'); ?>
-
-      <!-- beseed --></div><!-- beseed -->
-      <!-- videoseed --></div><!-- videoseed -->
-      <!-- viboom --></div><!-- viboom -->
-      
+        <?php
+//      <!-- beseed --></div><!-- beseed -->
+//      <!-- videoseed --></div><!-- videoseed -->
+//      <!-- viboom --></div><!-- viboom -->
+      ?>
       
     </div>
     <!-- Load module position below the player -->
